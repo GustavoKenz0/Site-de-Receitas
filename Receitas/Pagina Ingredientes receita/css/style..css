@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-body{
+    position: relative;
+    padding: 10px;
+    margin: 50px 400px;
+}
+
+.card-img{
+    height: 400px;
+    width: 200px; 
+}
+
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    color: #ffff;
+    background: linear-gradient(180deg, rgba(260, 260, 260, 0) 0%, rgba(0, 0, 0, 1.0) 100%);
+}
+
+.card-text h5{
+    font-size: 40px;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 40px;
+}
+
+.porcoes, .preparo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#porcao, #preparo{
+    color: #980c0c;
+    font-size: 2rem;
+    margin: 7px;
+}
+
+.detalhes span{
+    font-size: 20px;
+}
+
+.info{
+    color: #980c0c;
+    font-weight: 900;
+}
+
+.ingredientes-container h2, .preparo-container h2{
+    text-align: center;
+    margin: 40px;
+    color: #980c0c;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.ingredientes-content ul{
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.ingredientes-content li{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.preparo-content ol{
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    list-style: none;
+    counter-reset: count;
+}
+
+.preparo-content li{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    counter-increment: count;
+}
+
+
+.preparo-content li:before{
+    font-size: 30px;
+    color: #980c0c;
+    content: "0" counter(count) ". ";
+}
