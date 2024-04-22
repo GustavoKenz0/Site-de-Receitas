@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+  font-family: "Archivo", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+h2 {
+    text-align: center;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.ingredients-list,
+.instructions-list {
+    list-style-type: none;
+    padding: 0;
+}
+.ingredients-list li,
+.instructions-list li {
+    margin-bottom: 5px;
+    position: relative;
+}
+.ingredients-list li button,
+.instructions-list li button {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+}
+.button-container {
+    text-align: center;
+}
+.button {
+    background-color: #f9a912;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.voltar{
+    padding: 3em;
+}
